@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string s, chars = "hello";
+    int j = 0, pas = 0;
+    cin >> s;
+    for (int i = 0 , n = s.length() ; i < n ; i++) {
+        if (s[i] == chars[j]) {
+            j++;
+            pas++;
+
+            if (pas == 5) {
+                break;
+            }
+        }
+    }
+    if (pas == 5) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+}
